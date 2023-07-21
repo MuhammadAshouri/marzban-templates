@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/MuhammadAshouri/marzban-templates" target="_blank" rel="noopener noreferrer" >
-    <img src="https://github.com/MuhammadAshouri/marzban-templates/raw/master/template-01/preview.png" alt="SubPage screenshots" width="600" height="auto">
+    <img src="https://github.com/MuhammadAshouri/marzban-templates/raw/master/template-01/screenshot.png" alt="SubPage screenshots" width="600" height="auto">
   </a>
 </p>
 
