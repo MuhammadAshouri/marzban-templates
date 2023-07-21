@@ -197,7 +197,7 @@
             <div class="mx-auto max-w-xl">
                 <div class="flex flex-col sm:flex-row space-y-10 sm:space-y-0 sm:divide-x sm:rtl:divide-x-reverse sm:divide-blue-600/50">
                     <div class="basis-1/3 space-y-4 flex flex-col items-center py-3 sm:ltr:pr-9 sm:rtl:pl-9">
-                        <img src="https://cdn.jsdelivr.net/gh/MuhammadAshouri/marzban-templates@master/template-01/dist/images/marzban.svg" class="w-28" />
+                        <img src="https://cdn.jsdelivr.net/gh/MuhammadAshouri/marzban-templates@master/template-01/src/images/marzban.svg" class="w-28" />
                         <span class="inline-block dark:text-white text-black font-semibold text-lg">{{ user.username }}</span>
                         <span class="px-4 py-2 rounded-full inline-block shadow-md shadow-green-900 font-bold text-gray-200" x-data="{status: '{{ user.status.value }}'}" x-text="[status == 'active' ? $t('active') : status == 'limited' ? $t('limited') : status == 'expired' ? $t('expired') : $t('disabled')]" :class="[status == 'active' ? 'bg-blue-600' : status == 'limited' ? 'bg-red-600' : status == 'expired' ? 'bg-orange-600' : 'bg-gray-600']"></span>
                         <span class="flex cursor-pointer" onclick="openSettings()">
