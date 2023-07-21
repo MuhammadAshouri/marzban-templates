@@ -23,10 +23,19 @@
         let expireDateVar = expireDateInit.includes( "∞" ) ? "∞" : localStorage.getItem( "lang" ) == "fa" ? new Date( expireDateInit ).toLocaleString( "fa-IR-u-nu-latn" ).replace( ",", " " ) : expireDateInit;
         let appsJson = {
             "IOS": {
+                "Streisand": {
+                    "url": [
+                        {
+                            "name": "IOS 14+",
+                            "url": "https://apps.apple.com/us/app/streisand/id6450534064"
+                        }
+                    ],
+                    "tutorial": ""
+                },
                 "FoXray": {
                     "url": [
                         {
-                            "name": "",
+                            "name": "IOS 16+",
                             "url": "https://apps.apple.com/us/app/foxray/id6448898396"
                         }
                     ],
@@ -35,7 +44,7 @@
                 "V2Box": {
                     "url": [
                         {
-                            "name": "",
+                            "name": "IOS 14+",
                             "url": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690"
                         }
                     ],
@@ -121,7 +130,8 @@
                 "language": "Language",
                 "settings": "Settings",
                 "darkMode": "Dark mode",
-                "copyAll": "Copy All"
+                "copyAll": "Copy All",
+                "copyAllMessage": "All configs copied"
             },
             "fa": {
                 "active": "فعال",
@@ -143,7 +153,8 @@
                 "language": "زبان",
                 "settings": "تنظیمات",
                 "darkMode": "تم تیره",
-                "copyAll": "کپی همه"
+                "copyAll": "کپی همه",
+                "copyAllMessage": "تمام کانفیگ‌ها کپی شدند"
             },
             "ru": {
                 "active": "активный",
@@ -165,7 +176,8 @@
                 "language": "язык",
                 "settings": "настройки",
                 "darkMode": "настройки",
-                "copyAll": "скопировать все"
+                "copyAll": "скопировать все",
+                "copyAllMessage": "Все конфиги скопированы"
             }
         };
         let settings = {
@@ -353,7 +365,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
     <script>
-        console.log( appsJson );
         let progressBar = {
             width: dataUsage,
             color: dataChartColor
@@ -386,14 +397,6 @@
             {
                 const link = $( elem ).attr( "data-link" );
                 $( "#popup > .content" ).addClass( "bg-white p-5" ).html( "" );
-                // new QRCode( document.querySelectorAll( "#popup > .content" )[ 0 ], {
-                //     text: link,
-                //     width: qrSize,
-                //     height: qrSize,
-                //     colorDark: "#000000",
-                //     colorLight: "#ffffff",
-                //     correctLevel: QRCode.CorrectLevel.H
-                // } );
                 $( "#popup > .content" ).qrcode( {
                     width: qrSize,
                     height: qrSize,
@@ -418,6 +421,7 @@
                 if ( !link.startsWith( "http" ) ) links.push( link );
             } );
             navigator.clipboard.writeText( links.join( "\n" ) );
+            alert( AlpineI18n.t( "copyAll" ) );
         } );
 
         document.addEventListener( 'alpine:initialized', () =>
