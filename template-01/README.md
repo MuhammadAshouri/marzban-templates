@@ -14,12 +14,12 @@ apt install wget
 wget https://cdn.jsdelivr.net/gh/MuhammadAshouri/marzban-templates@master/template-01/dist/index.html
 ```
 
-Then you have to map it to your docker container. Add this line to volumn section of `docker-compose.yml`:
+Then you have to map it to your docker container. Add this line to volume section of `docker-compose.yml`:
 ```docker
 services:
     marzban:
         ...
-        volumns:
+        volumes:
             ...
             - /opt/marzban/index.html:/code/app/templates/subscription/index.html # this line
 ```
