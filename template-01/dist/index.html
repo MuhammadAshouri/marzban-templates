@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ user.username }} - Sub Info</title>
-    <link href="https://cdn.rawgit.com/MuhammadAshouri/marzban-templates/master/template-01/dist/build.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/MuhammadAshouri/marzban-templates@master/template-01/dist/build.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -30,7 +30,7 @@
                             "url": "https://apps.apple.com/us/app/foxray/id6448898396"
                         }
                     ],
-                    "tutorial": "https://drive.google.com/uc?export=download&id=1B-uPCTjKxCAqCarTkGRL3OIfEydjo9KX"
+                    "tutorial": ""
                 },
                 "V2Box": {
                     "url": [
@@ -39,7 +39,7 @@
                             "url": "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690"
                         }
                     ],
-                    "tutorial": "https://drive.google.com/uc?export=download&id=1B-uPCTjKxCAqCarTkGRL3OIfEydjo9KX"
+                    "tutorial": ""
                 },
                 "Shadowrocket": {
                     "url": [
@@ -48,7 +48,7 @@
                             "url": "https://apps.apple.com/ca/app/shadowrocket/id932747118"
                         }
                     ],
-                    "tutorial": "https://drive.google.com/uc?export=download&id=1B-uPCTjKxCAqCarTkGRL3OIfEydjo9KX"
+                    "tutorial": ""
                 }
             },
             "Android": {
@@ -63,7 +63,7 @@
                             "url": "https://play.google.com/store/apps/details?id=com.v2ray.ang"
                         }
                     ],
-                    "tutorial": "https://drive.google.com/uc?export=download&id=1B-uPCTjKxCAqCarTkGRL3OIfEydjo9KX"
+                    "tutorial": ""
                 },
                 "NekoBox": {
                     "url": [
@@ -76,7 +76,7 @@
                             "url": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.1.4/NB4A-1.1.4-armeabi-v7a.apk"
                         }
                     ],
-                    "tutorial": "https://drive.google.com/uc?export=download&id=1B-uPCTjKxCAqCarTkGRL3OIfEydjo9KX"
+                    "tutorial": ""
                 }
             },
             "Windows": {
@@ -87,7 +87,7 @@
                             "url": "https://github.com/2dust/v2rayN/releases/download/6.27/zz_v2rayN-With-Core-SelfContained.7z"
                         }
                     ],
-                    "tutorial": "https://drive.google.com/uc?export=download&id=1B-uPCTjKxCAqCarTkGRL3OIfEydjo9KX"
+                    "tutorial": ""
                 },
                 "nekoray": {
                     "url": [
@@ -96,7 +96,7 @@
                             "url": "https://github.com/MatsuriDayo/nekoray/releases/download/3.8/nekoray-3.8-2023-06-14-windows64.zip"
                         }
                     ],
-                    "tutorial": "https://drive.google.com/uc?export=download&id=1B-uPCTjKxCAqCarTkGRL3OIfEydjo9KX"
+                    "tutorial": ""
                 }
             }
         };
@@ -197,7 +197,7 @@
             <div class="mx-auto max-w-xl">
                 <div class="flex flex-col sm:flex-row space-y-10 sm:space-y-0 sm:divide-x sm:rtl:divide-x-reverse sm:divide-blue-600/50">
                     <div class="basis-1/3 space-y-4 flex flex-col items-center py-3 sm:ltr:pr-9 sm:rtl:pl-9">
-                        <img src="https://cdn.rawgit.com/MuhammadAshouri/marzban-templates/master/template-01/dist/images/marzban.svg" class="w-28" />
+                        <img src="https://cdn.jsdelivr.net/gh/MuhammadAshouri/marzban-templates@master/template-01/dist/images/marzban.svg" class="w-28" />
                         <span class="inline-block dark:text-white text-black font-semibold text-lg">{{ user.username }}</span>
                         <span class="px-4 py-2 rounded-full inline-block shadow-md shadow-green-900 font-bold text-gray-200" x-data="{status: '{{ user.status.value }}'}" x-text="[status == 'active' ? $t('active') : status == 'limited' ? $t('limited') : status == 'expired' ? $t('expired') : $t('disabled')]" :class="[status == 'active' ? 'bg-blue-600' : status == 'limited' ? 'bg-red-600' : status == 'expired' ? 'bg-orange-600' : 'bg-gray-600']"></span>
                         <span class="flex cursor-pointer" onclick="openSettings()">
