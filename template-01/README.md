@@ -19,7 +19,7 @@ Then you have to map it to your docker container. Add this line to volumn sectio
 services:
     marzban:
         ...
-        volumns:
+        volumes:
             ...
             - /opt/marzban/index.html:/code/app/templates/subscription/index.html # this line
 ```
