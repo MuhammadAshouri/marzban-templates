@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs@master/qrcode.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/MuhammadAshouri/marzban-templates@master/template-01/dist/qrcode.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.4.0/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@2.2.0/dist/alpine-clipboard.js"></script>
@@ -386,10 +386,18 @@
             {
                 const link = $( elem ).attr( "data-link" );
                 $( "#popup > .content" ).addClass( "bg-white p-5" ).html( "" );
-                new QRCode( document.querySelectorAll( "#popup > .content" )[ 0 ], {
-                    text: link,
+                // new QRCode( document.querySelectorAll( "#popup > .content" )[ 0 ], {
+                //     text: link,
+                //     width: qrSize,
+                //     height: qrSize,
+                //     colorDark: "#000000",
+                //     colorLight: "#ffffff",
+                //     correctLevel: QRCode.CorrectLevel.H
+                // } );
+                $( "#popup > .content" ).qrcode( {
                     width: qrSize,
                     height: qrSize,
+                    text: link,
                     colorDark: "#000000",
                     colorLight: "#ffffff",
                     correctLevel: QRCode.CorrectLevel.H
