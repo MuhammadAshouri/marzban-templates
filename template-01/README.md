@@ -28,3 +28,11 @@ Now you can restart your marzban's docker:
 ```
 marzban restart
 ```
+
+# Edit
+
+You can change default settings from settings variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/153d1f00c29c7ac9c5d1bbc2403a0dd6cfafc9b8/template-01/dist/index.html#L171C16-L171C16)
+
+You can also change tutorial from appsJson variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/153d1f00c29c7ac9c5d1bbc2403a0dd6cfafc9b8/template-01/dist/index.html#L24C25-L24C25)
+
+For tutorial video, you need to set direct link of video to tutorial of json
