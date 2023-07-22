@@ -15,6 +15,7 @@ wget https://cdn.jsdelivr.net/gh/MuhammadAshouri/marzban-templates@master/templa
 ```
 
 Then you have to map it to your docker container. Add this line to volume section of `docker-compose.yml`:
+(DO NOT REPLACE WHOLE FILE, Just the last line)
 ```docker
 services:
     marzban:
@@ -31,8 +32,8 @@ marzban restart
 
 # Edit
 
-You can change default settings from settings variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/153d1f00c29c7ac9c5d1bbc2403a0dd6cfafc9b8/template-01/dist/index.html#L171C16-L171C16)
+You can change default settings from settings variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/3328559ea73e5a884fa0a619332ab1a040221395/template-01/dist/index.html#L183C15-L183C15)
 
-You can also change tutorial from appsJson variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/153d1f00c29c7ac9c5d1bbc2403a0dd6cfafc9b8/template-01/dist/index.html#L24C25-L24C25)
+You can also change tutorial from appsJson variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/3328559ea73e5a884fa0a619332ab1a040221395/template-01/dist/index.html#L112C14-L112C14)
 
 For tutorial video, you need to set direct link of video to tutorial of json
