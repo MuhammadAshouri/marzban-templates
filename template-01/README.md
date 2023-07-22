@@ -37,4 +37,5 @@ You can change default settings from settings variable in index.html, [here](htt
 You can also change tutorial from appsJson variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/3328559ea73e5a884fa0a619332ab1a040221395/template-01/dist/index.html#L112C14-L112C14) line 112
 
 For tutorial video, you need to set direct link of video to tutorial of json
+
 To change logo you can change src in line 212
