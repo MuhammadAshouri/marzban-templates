@@ -33,13 +33,13 @@ marzban restart
 
 # Edit
 
-You can change default settings from settings variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/3328559ea73e5a884fa0a619332ab1a040221395/template-01/index.html#L183C15-L183C15) line 183
+You can change default settings from settings variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/120817c45e2af843a3724ba9fe2018519ddc63b4/template-01/index.html#L194C19-L194C19) line 194
 
-You can also change tutorial from appsJson variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/3328559ea73e5a884fa0a619332ab1a040221395/template-01/index.html#L112C14-L112C14) line 112
+You can also change tutorial from appsJson variable in index.html, [here](https://github.com/MuhammadAshouri/marzban-templates/blob/3328559ea73e5a884fa0a619332ab1a040221395/template-01/index.html#L112C14-L112C14) line 25
 
 For tutorial video, you need to set direct link of video to tutorial of json
 
-To change logo you can change src in line 212
+To change logo you can change src in line 226
 
 ---
 
@@ -72,10 +72,10 @@ marzban restart
 
 # ویرایش
 
-تنظیمات پیش فرض رو از خط 183 فایل تغییر دهید: [اینجا](https://github.com/MuhammadAshouri/marzban-templates/blob/3328559ea73e5a884fa0a619332ab1a040221395/template-01/index.html#L183C15-L183C15)
+تنظیمات پیش فرض رو از خط 194 فایل تغییر دهید: [اینجا](https://github.com/MuhammadAshouri/marzban-templates/blob/120817c45e2af843a3724ba9fe2018519ddc63b4/template-01/index.html#L194C19-L194C19)
 
-لیست نرم افزارها رو هم از خط 112 تغییر بدید: [اینجا](https://github.com/MuhammadAshouri/marzban-templates/blob/3328559ea73e5a884fa0a619332ab1a040221395/template-01/index.html#L112C14-L112C14)
+لیست نرم افزارها رو هم از خط 25 تغییر بدید: [اینجا](https://github.com/MuhammadAshouri/marzban-templates/blob/3328559ea73e5a884fa0a619332ab1a040221395/template-01/index.html#L112C14-L112C14)
 
 برای آموزش هم آدرس direct یک ویدیو رو برای هر نرم افزار توی tutorial بذارید.
 
-برای تغییر لوگو هم خط 212 رو ادیت کنید
+برای تغییر لوگو هم خط 226 رو ادیت کنید
