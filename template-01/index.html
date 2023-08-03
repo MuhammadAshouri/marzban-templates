@@ -351,7 +351,7 @@
                                     <template x-for="item in Object.keys(appsJson)">
                                         <div class="hidden" :id="item + '-tutorials'" role="tabpanel" :aria-labelledby="item + '-tutorials-tab'">
                                             <ul class="list-none p-0 m-0">
-                                                <template x-for="app in Object.getOwnPropertyNames(appsJson[item]).reverse()">
+                                                <template x-for="app in Object.keys(appsJson[item]).reverse()">
                                                     <li class="flex px-3 mb-1 justify-between leading-[3.5rem] hover:bg-black/10 rounded-md hover:shadow-lg transition duration-300" x-show="appsJson[item][app].tutorial != ''">
                                                         <span class="font-semibold flex-1 dark:text-gray-200 text-black cursor-default" x-text="app"></span>
                                                         <div class="flex justify-between items-center">
