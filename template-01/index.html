@@ -363,7 +363,7 @@
                                                 <template x-for="app in Object.keys(appsJson[item]).reverse()">
                                                     <template x-for="subApp in appsJson[item][app].url">
                                                         <li :class="subApp.best ? 'bg-green-600/30 shadow-lg' : 'hover:bg-black/10 hover:shadow-lg'" class="flex px-3 mb-1 justify-between leading-[3.5rem] rounded-md transition duration-300" x-data="{link: subApp.url}">
-                                                            <div class="flex flex-row items-center space-x-3 rtl:space-x-reverse rtl:flex-row cursor-default">
+                                                            <div class="flex flex-row items-center space-x-3 rtl:space-x-reverse cursor-default">
                                                                 <span class="font-semibold flex-1 dark:text-gray-200 text-black" x-text="app"></span>
                                                                 <span :class="subApp.best ? 'dark:text-gray-200 text-gray-800' : 'text-gray-600'" class="text-sm " x-text="subApp.name"></span>
                                                             </div>
