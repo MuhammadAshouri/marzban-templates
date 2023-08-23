@@ -1,11 +1,15 @@
 {
-  "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2"
-  },
-  "dependencies": {
-    "alpinejs": "^3.12.2",
-    "esbuild": "^0.18.10"
-  }
+    "scripts": {
+        "start": "npx tailwindcss -i ./style.css -o ./final.css --watch",
+        "build": "npx tailwindcss -o build.css --minify"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.14",
+        "postcss": "^8.4.24",
+        "tailwindcss": "^3.3.2"
+    },
+    "dependencies": {
+        "alpinejs": "^3.12.2",
+        "esbuild": "^0.18.10"
+    }
 }
