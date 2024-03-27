@@ -261,7 +261,7 @@
 
             if ( platform.indexOf( 'win' ) !== -1 ) return appsJson.Windows.v2rayN.autoImport;
             else if ( platform.indexOf( 'iphone' ) !== -1 || platform.indexOf( 'ipad' ) !== -1 || platform.indexOf( 'ipod' ) !== -1 || platform.indexOf( 'mac' ) !== -1 ) return appsJson.IOS.V2Box;
-            else if ( platform.indexOf( 'android' ) !== -1 ) return appsJson.Android.v2rayNG.autoImport;
+            else if ( platform.indexOf( 'android' ) !== -1 || platform.indexOf( 'linux arm' ) !== -1 ) return appsJson.Android.v2rayNG.autoImport;
             else return '';
         }
     </script>
