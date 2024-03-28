@@ -11,7 +11,7 @@ First you need to copy [html file](https://github.com/MuhammadAshouri/marzban-te
 ```bash
 cd /opt/marzban
 apt install wget
-wget https://cdn.jsdelivr.net/gh/MuhammadAshouri/marzban-templates@master/template-01/index.html
+wget -O index.html https://raw.githubusercontent.com/MuhammadAshouri/marzban-templates/master/template-01/index.html
 ```
 
 Then you have to map it to your docker container. Add this line to volume section of `docker-compose.yml`:
@@ -50,7 +50,7 @@ To change logo you can change src in line 226
 ```bash
 cd /opt/marzban
 apt install wget
-wget https://cdn.jsdelivr.net/gh/MuhammadAshouri/marzban-templates@master/template-01/index.html
+wget -O index.html https://raw.githubusercontent.com/MuhammadAshouri/marzban-templates/master/template-01/index.html
 ```
 
 حالا باید این فایل به به داکر مپ کنید. خط آخر رو به بخش volumes فایل `docker-compose.yml` اضافه کنید:
