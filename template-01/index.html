@@ -549,17 +549,18 @@
         } );
 
         $( ".copyAllButton" ).on( "click", async ( a ) =>
-        {
-            let links = [];
-            $( ".qr-button" ).each( ( i, ele ) =>
-            {
-                let link = $( ele ).attr( "data-link" );
-                if ( !link.startsWith( "http" ) ) links.push( link );
-            } );
-            await navigator.clipboard.writeText( links.join( "\n" ) );
-            var thisObj = $( a.target ).css( "background", "#16a34a" );
-            setTimeout( () => thisObj.css( "background", "#2563eb" ), 1500 );
-        } );
+{
+    let links = [];
+    {% for link in user.links %}
+    links.push( "{{ link }}" );
+    {% endfor %}
+    
+    if ( links.length > 0 ) {
+        await navigator.clipboard.writeText( links.join( "\n" ) );
+        var thisObj = $( a.target ).css( "background", "#16a34a" );
+        setTimeout( () => thisObj.css( "background", "#2563eb" ), 1500 );
+    }
+} );
 
         document.addEventListener( "alpine:initialized", () =>
         {
